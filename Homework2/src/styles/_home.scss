@@ -262,13 +262,14 @@
     position: absolute;
     top: 4.1rem;
     left: 4.1rem;
+    margin-right: 4.1rem;
     @include flex(flex-start, flex-start, column);
 
     .info__header {
       font-family: Jost-Medium, sans-serif;
       font-size: $shopnowHeaders;
       color: $mainDark;
-      padding-bottom: 1.8rem;
+      margin-bottom: 1.8rem;
     }
     .info__goto {
       @include textFormater;
@@ -352,6 +353,69 @@
       color: $descText;
       align-self: flex-start;
       padding-top: 2.4rem;
+    }
+  }
+}
+
+//////////////
+//  FOOTER  //
+//////////////
+
+.footer {
+  @include flex(center, center, column);
+  padding: 4.3rem 0 1.4rem 0;
+
+  .footer__widgets {
+    width: 100%;
+    margin-bottom: 6.3rem;
+    @include flex(space-between, center, row);
+
+    .socials__widget {
+      flex: 1 1 15rem;
+      @include flex(flex-start, center, row);
+      .social__icon {
+        margin-right: 3rem;
+      }
+    }
+
+    .policy {
+      margin-right: 4.5rem;
+      @include textFormater;
+      font-family: Jost-Bold, sans-serif;
+    }
+
+    .curlang__widget {
+      flex: 1 1 10rem;
+      @include flex(flex-end, center, row);
+
+      .lbl {
+        @include textFormater;
+        color: $footerCurLang;
+        margin-right: 1.4rem;
+      }
+
+      .cur__form {
+        margin-right: 6rem;
+      }
+
+      .slct {
+        -webkit-appearance: none;
+        padding-right: 1.2rem;
+        border: none;
+        text-transform: uppercase;
+        background-image: url("../assets/-e-kz-angle-down.svg");
+        background-repeat: no-repeat;
+        background-position: right center;
+      }
+    }
+  }
+
+  .footer__copyrights-payments {
+    width: 100%;
+    @include flex(space-between, center, row);
+
+    .copyright {
+      @include textFormater;
     }
   }
 }

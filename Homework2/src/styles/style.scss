@@ -39,6 +39,7 @@ $itemPromCol: #111111;
 $backgroundText: #959595;
 $saleBackground: #dc2b2b;
 $btnBackground: #ffffff;
+$footerCurLang: #858585;
 
 //sizes width x height
 $navListW: 35.7rem;
@@ -86,40 +87,5 @@ $boxSliderH: 33.8rem;
 // imports
 @import "global";
 @import "home";
+@import "home-media";
 
-////////////
-// MEDIA  //
-////////////
-@media screen and (max-width: 1826px) {
-  .shop__section {
-    .items {
-      @include flex(space-around, center, row);
-
-      .item__section {
-        margin-right: 2rem;
-        &:nth-child(4n + 4) {
-          margin-right: 2rem;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1427px) {
-  .main__content {
-    width: 90%;
-  }
-
-  .products__slider {
-    .swiper__btn {
-      padding: 2rem;
-    }
-    .btn-prev {
-      margin-left: 2.5rem;
-    }
-
-    .btn-next {
-      margin-right: 2.5rem;
-    }
-  }
-}
