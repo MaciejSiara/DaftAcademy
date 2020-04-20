@@ -1,0 +1,125 @@
+///////////////////////////////////////////
+///  1rem = 10px -> check _global.scss  ///
+///////////////////////////////////////////
+
+// fonts
+// nie mogłem znaleźć bezpośredniego url do fontu ze wszystkimi grubościami
+// czcionki. Dlatego dodaje url każdego weight osobno.
+// Zdaje sobie sprawe że powinna być ogolna czcionka jako font-family i
+// okreslać jej grubość za pomocą opcji font-weight:
+@font-face {
+  font-family: Jost-Medium;
+  src: url("../assets/fonts/Jost-500-Medium.ttf");
+}
+
+@font-face {
+  font-family: Jost-Bold;
+  src: url("../assets/fonts/Jost-700-Bold.ttf");
+}
+
+@font-face {
+  font-family: Jost-Heavy;
+  src: url("../assets/fonts/Jost-800-Heavy.ttf");
+}
+
+// font sizes
+$textFormat: 1.3rem;
+$fontNav: 1.5rem;
+$shopTitle: 4.8rem;
+$itemProm: 1rem;
+$shopnowHeaders: 2.4rem;
+$newsletterHeader: 3rem;
+$newsletterProm: 1.6rem;
+
+// collors
+$carBack: #263a49;
+$descText: #454545;
+$mainDark: #151515;
+$itemPromCol: #111111;
+$backgroundText: #959595;
+$saleBackground: #dc2b2b;
+$btnBackground: #ffffff;
+
+//sizes width x height
+$navListW: 35.7rem;
+$headerH: 55rem;
+$sliderH: 43.8rem;
+$boxSliderW: 26.8rem;
+$boxSliderH: 33.8rem;
+
+// flex
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+//Jost-Medium, 13px, #151515
+@mixin textFormater {
+  font-family: Jost-Medium, sans-serif;
+  color: $mainDark;
+  font-size: $textFormat;
+}
+
+// underline  transition
+@mixin underlineTransition {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid black;
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: 0.2s ease-in-out;
+  }
+  &:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+// imports
+@import "global";
+@import "home";
+
+////////////
+// MEDIA  //
+////////////
+@media screen and (max-width: 1826px) {
+  .shop__section {
+    .items {
+      @include flex(space-around, center, row);
+
+      .item__section {
+        margin-right: 2rem;
+        &:nth-child(4n + 4) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1427px) {
+  .main__content {
+    width: 90%;
+  }
+
+  .products__slider {
+    .swiper__btn {
+      padding: 2rem;
+    }
+    .btn-prev {
+      margin-left: 2.5rem;
+    }
+
+    .btn-next {
+      margin-right: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main__content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.item__info {
+  @include flex(center, flex-start, column);
+  padding: 2rem;
+}
+
+.item-name {
+  font-family: Jost-Medium, sans-serif;
+  font-size: $textFormat;
+  color: $descText;
+  padding-bottom: 1rem;
+}
+
+.item-price {
+  font-family: Jost-Bold, sans-serif;
+  font-size: $textFormat;
+  color: $mainDark;
+  padding-right: 0.7rem;
+}
+
+.btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+
+
+
