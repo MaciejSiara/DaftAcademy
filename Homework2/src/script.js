@@ -4,10 +4,9 @@ const newletterHeader = document.querySelector(".newsletter__header");
 const policy = document.getElementsByClassName("policy");
 const price = document.getElementsByClassName("price-shop");
 
-
 let width = window.matchMedia("(max-width: 710px)");
-myFunction(width); 
-width.addListener(myFunction); 
+myFunction(width);
+width.addListener(myFunction);
 
 function myFunction(width) {
   if (width.matches) {

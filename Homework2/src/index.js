@@ -1,5 +1,5 @@
 import "./styles/style.scss";
-// import "./script.js";
+import "./script.js";
 import Swiper from "swiper";
 
 (function swiperFcn() {
