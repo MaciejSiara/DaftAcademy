@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%; // 1rem = 10px;
+  // overflow: hidden;
 }
 
 ul {
@@ -19,11 +20,6 @@ a {
 .main__content {
   width: 70%;
   margin: 0 auto;
-}
-
-.item__info {
-  @include flex(center, flex-start, column);
-  padding: 2rem;
 }
 
 .item-name {
@@ -46,6 +42,30 @@ a {
   border: none;
 }
 
+.display-none {
+display: none;  
+}
 
+.to__card {
+  @include flex(space-between, center, row);
+  width: 100%;
 
+  .card-add {
+    @include textFormater;
+    font-family: Jost-Bold, sans-serif;
+    text-transform: uppercase;
+  }
 
+  .card__add__icons {
+    padding-right: 2rem;
+    @include flex(space-between, center, row);
+  }
+
+  .search-space-icon {
+    margin-right: 2.4rem;
+  }
+
+  .icon-click {
+    cursor: pointer;
+  }
+}

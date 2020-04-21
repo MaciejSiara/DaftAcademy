@@ -12,6 +12,10 @@
     padding: 3.7rem 0;
     position: relative;
 
+    .burger-icon {
+      display: none;
+    }
+
     .header__logo {
       position: absolute;
       top: 50%;
@@ -98,17 +102,27 @@
   .btn-next {
     margin-right: 12.5rem;
   }
+  .swiper-pagination {
+    display: none;
+  }
 }
 
 .box__item {
+  position: relative;
   cursor: pointer;
   width: $boxSliderW;
   height: $boxSliderH;
-  background-image: url("https://via.placeholder.com/268x338");
+
   border-radius: 0.5rem;
   box-shadow: 2px 10px 10px rgba($color: #000000, $alpha: 0.5);
   position: relative;
   @include flex(flex-end, flex-start, column);
+
+  .item__info {
+    position: absolute;
+    @include flex(center, flex-start, column);
+    padding: 2rem;
+  }
 }
 
 /////////////////////////
@@ -127,14 +141,13 @@
     }
   }
   .items {
-    @include flex(space-between, center, row);
+    @include flex(space-between, flex-start, row);
     flex-wrap: wrap;
 
     .item__section {
       @include flex(flex-start, flex-start, column);
       min-height: 50.4rem;
       margin: 0 1rem 3rem 0;
-      align-content: space-between;
 
       &:nth-child(4n + 4) {
         margin-right: 0;
@@ -177,30 +190,6 @@
           font-family: Jost-Heavy, sans-serif;
           font-size: $itemProm;
           color: $itemPromCol;
-        }
-      }
-
-      .to__card {
-        @include flex(space-between, center, row);
-        width: 100%;
-
-        .card-add {
-          @include textFormater;
-          font-family: Jost-Bold, sans-serif;
-          text-transform: uppercase;
-        }
-
-        .card__add__icons {
-          padding-right: 2rem;
-          @include flex(space-between, center, row);
-        }
-
-        .search-space-icon {
-          margin-right: 2.4rem;
-        }
-
-        .icon-click {
-          cursor: pointer;
         }
       }
 

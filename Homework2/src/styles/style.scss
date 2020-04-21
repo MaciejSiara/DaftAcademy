@@ -31,6 +31,8 @@ $shopnowHeaders: 2.4rem;
 $newsletterHeader: 3rem;
 $newsletterProm: 1.6rem;
 
+$shopTitleMobile: 2.4rem;
+
 // collors
 $carBack: #263a49;
 $descText: #454545;
@@ -41,12 +43,16 @@ $saleBackground: #dc2b2b;
 $btnBackground: #ffffff;
 $footerCurLang: #858585;
 
-//sizes width x height
+//sizes width x height DESKTOP
 $navListW: 35.7rem;
 $headerH: 55rem;
 $sliderH: 43.8rem;
 $boxSliderW: 26.8rem;
 $boxSliderH: 33.8rem;
+
+//sizes width x height MOBILE
+$headerMobileH: 52.3rem;
+$sliderMobileH: 42.4rem;
 
 // flex
 @mixin flex($justify, $align, $direction) {
