@@ -7,12 +7,13 @@
     <meta name="description" content="Some Web description...." />
     <meta name="robot" content="index,follow" />
 
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" /> -->
+    <!------------------ SWIPER SLIDER ---------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
-
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
+    <!------------------------------------------------------------->
+   
     <title>Zonex</title>
   </head>
 
@@ -22,7 +23,9 @@
     <!-- ================== -->
     <section class="header__section">
       <header class="header main__content">
+        <div class="burger">
         <img class="burger-icon" src="./assets/-e-canvas-menu.svg" srcset="./assets/-e-canvas-menu.svg, ./assets/-e-canvas-menu@2x.svg 2x, ./assets/-e-canvas-menu@3x.svg 3x" alt="burger">
+        </div>
         <div class="header__logo">
           <img
             src="./assets/-e-logo-zonex.svg"
@@ -51,7 +54,6 @@
                 ./assets/-e-kz-user.svg,
                 ./assets/-e-kz-user@2x.svg 2x,
                 ./assets/-e-kz-user@3x.svg 3x,
-
               "
               alt="User"
             />
@@ -160,6 +162,7 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
       <div class="swiper__btn btn-next">
         <img
@@ -201,7 +204,7 @@
             <span class="prom-text">new</span>
           </div>
           <span class="item-name">Eye Mesh Boat Shoes</span>
-          <span class="item-price">$220.00</span>
+          <span class="item-price price-shop">$220.00</span>
           <div class="display-none">
             <button class="btn card-add">select option</button>
             <div class="card__add__icons">
@@ -235,7 +238,7 @@
           </div>
 
           <span class="item-name">Azure Tote</span>
-          <span class="item-price">$290.00</span>
+          <span class="item-price price-shop">$290.00</span>
           <div class="display-none">
             <button class="btn card-add">add to card</button>
             <div class="card__add__icons">
@@ -270,7 +273,7 @@
           </div>
 
           <span class="item-name">Blue Raincoat</span>
-          <span class="item-price">$220.00</span>
+          <span class="item-price price-shop">$220.00</span>
           <div class="display-none">
             <button class="btn card-add">add to card</button>
             <div class="card__add__icons">
@@ -317,7 +320,7 @@
             <span class="prom-text">best seller</span>
           </div>
           <span class="item-name">Backpack with contrasting buckle</span>
-          <span class="item-price">$80.00 - $125.00</span>
+          <span class="item-price price-shop">$80.00 - $125.00</span>
           <div class="display-none">
             <button class="btn card-add">select option</button>
             <div class="card__add__icons">
@@ -363,7 +366,7 @@
             <span class="prom-text">best seller</span>
           </div>
           <span class="item-name">Shirt in organic cotton classic gingham</span>
-          <span class="item-price">$59.50</span>
+          <span class="item-price price-shop">$59.50</span>
           <div class="display-none">
             <button class="btn card-add">add to card</button>
             <div class="card__add__icons">
@@ -412,7 +415,7 @@
             <span class="prom-text">hot</span>
           </div>
           <span class="item-name">Tailored indigo jumpsuit</span>
-          <div class="item__prices">
+          <div class="item__prices price-shop">
             <span class="item-price">$128.00</span>
             <span class="item-old-price">$165.00</span>
           </div>
@@ -461,7 +464,7 @@
             <span class="prom-text">top rate</span>
           </div>
           <span class="item-name">Triple stone drop earrings</span>
-          <span class="item-price">$49.50</span>
+          <span class="item-price price-shop">$49.50</span>
           <div class="display-none">
             <button class="btn card-add">add to card</button>
             <div class="card__add__icons">
@@ -507,7 +510,7 @@
             <span class="prom-text">only a few left</span>
           </div>
           <span class="item-name">Backpack with contrasting buckle</span>
-          <span class="item-price">$158.00</span>
+          <span class="item-price price-shop">$158.00</span>
           <div class="display-none">
             <button class="btn card-add">add to card</button>
             <div class="card__add__icons">
@@ -563,13 +566,18 @@
         </div>
       </div>
       <div class="shopnow__category cat4">
-        <img class="cat-img" src="https://via.placeholder.com/769x310" alt="" />
+        <!-- <img class="cat-img" src="https://via.placeholder.com/769x310" alt="" /> -->
+         <img class="cat-img" src="http://placekitten.com/769/310" alt="" />
         <div class="category__info">
           <span class="info__header">Sunglasses for you</span>
           <span class="info__goto">Shop now</span>
         </div>
       </div>
     </section>
+
+     <!-- ================ -->
+    <!-- ====  FORM   ==== -->
+    <!-- ================= -->
     <section class="newsletter main__content">
       <h2 class="newsletter__header">Our newsletter</h2>
       <h3 class="newsletter__info">join our list and get 15% off your first purchase!</h3>
@@ -631,9 +639,9 @@
           </form>
         </div>
       </div>
-      <div class="footer__copyrights-payments">
+      <div class="footer__copyrights">
         <span class="copyright">&copy;2019 Zonex All rights reserved</span>
-        <img src="./assets/payment.jpg" srcset="./assets/payment.jpg, ./assets/payment@2x.jpg 2x, ./assets/payment@3x.jpg 3x" alt="payments">
+        <img class="credit-cards" src="./assets/payment.jpg" srcset="./assets/payment.jpg, ./assets/payment@2x.jpg 2x, ./assets/payment@3x.jpg 3x" alt="payments">
       </div>
     </footer>
   </body>

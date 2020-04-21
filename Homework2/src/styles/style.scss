@@ -5,8 +5,8 @@
 // fonts
 // nie mogłem znaleźć bezpośredniego url do fontu ze wszystkimi grubościami
 // czcionki. Dlatego dodaje url każdego weight osobno.
-// Zdaje sobie sprawe że powinna być ogolna czcionka jako font-family i
-// okreslać jej grubość za pomocą opcji font-weight:
+// powinna być ogolna czcionka jako font-family i
+// okreslać jej grubość za pomocą font-weight:
 @font-face {
   font-family: Jost-Medium;
   src: url("../assets/fonts/Jost-500-Medium.ttf");
@@ -32,6 +32,9 @@ $newsletterHeader: 3rem;
 $newsletterProm: 1.6rem;
 
 $shopTitleMobile: 2.4rem;
+$newsletterHeaderMobile: 1.6rem;
+$newsletterPromMobile: 1.3rem;
+$textFormatMobile: 1.2rem;
 
 // collors
 $carBack: #263a49;

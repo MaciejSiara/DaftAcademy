@@ -12,7 +12,7 @@
     padding: 3.7rem 0;
     position: relative;
 
-    .burger-icon {
+    .burger {
       display: none;
     }
 
@@ -87,7 +87,7 @@
   background-color: $carBack;
 
   .swiper-slide {
-    min-width: 26.8rem;
+    // width: 100%;
   }
 
   .swiper__btn {
@@ -133,7 +133,7 @@
   @include flex(center, center, column);
 
   .shop__title {
-    padding: 10.9rem 0;
+    margin: 10.9rem 0 10.7rem;
 
     .title {
       font-family: Jost-Medium, sans-serif;
@@ -268,16 +268,16 @@
   }
 }
 
-////////////
-//  FORM  //
-////////////
+//////////////
+//  FOOTER  //
+//////////////
 
 .newsletter {
   @include flex(center, center, column);
-  height: 40.6rem;
+  height: 100%;
 
   .newsletter__header {
-    padding-top: 9.8rem;
+    margin: 9.8rem 0 3.5rem 0;
     @include textFormater;
     font-size: $newsletterHeader;
   }
@@ -286,10 +286,10 @@
     font-family: Jost-Medium, sans-serif;
     font-size: $newsletterProm;
     color: $descText;
-    padding: 3.5rem 0 7rem;
   }
 
   .newsletter__form {
+    margin-top: 7rem;
     width: 60%;
     height: 100%;
     @include flex(flex-start, center, column);
@@ -341,7 +341,7 @@
       @include textFormater;
       color: $descText;
       align-self: flex-start;
-      padding-top: 2.4rem;
+      margin: 2.4rem 0 9.7rem 0;
     }
   }
 }
@@ -399,7 +399,7 @@
     }
   }
 
-  .footer__copyrights-payments {
+  .footer__copyrights {
     width: 100%;
     @include flex(space-between, center, row);
 
