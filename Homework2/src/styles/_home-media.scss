@@ -245,15 +245,13 @@
     .swiper-container {
       width: 100%;
     }
-    .swiper-scrollbar {
-      display: block;
-    }
     .swiper-pagination {
       display: block;
     }
   }
 
-  .box__item {
+  .box__item,
+  img {
     max-height: 30.4rem;
     max-width: 24.1rem;
   }
