@@ -86,10 +86,6 @@
   min-height: $sliderH;
   background-color: $carBack;
 
-  .swiper-slide {
-    // width: 100%;
-  }
-
   .swiper__btn {
     cursor: pointer;
     outline: none;
@@ -193,11 +189,7 @@
         }
       }
 
-      .item-old-price {
-        @include textFormater;
-        color: $backgroundText;
-        text-decoration-line: line-through;
-      }
+      
     }
   }
 
