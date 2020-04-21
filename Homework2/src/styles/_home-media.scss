@@ -123,74 +123,67 @@
       margin: 2.1rem 0 5rem 0;
     }
   }
+}
+///////////////
+//  FOOTER   //
+///////////////
+.footer {
+  padding: 4rem 0 1.9rem 0;
+  .footer__widgets {
+    @include flex(center, center, column);
+    padding: 0 0 3.5rem 0.5rem;
+    height: 100%;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 2.1rem;
 
-  // FOOTER
-  .footer {
-    .footer__widgets {
+    .socials__widget {
+      width: 100%;
+      flex: 0 0 0;
+      margin-bottom: 3.4rem;
+      @include flex(center, center, row);
+      .social__icon {
+        margin: 0 3rem;
+      }
+    }
+
+    .policies__widget {
+      width: 100%;
+      @include flex(center, center, row);
+      margin-bottom: 3.6rem;
+
       .policy {
-        margin-right: 2.5rem;
+        margin: 0 5rem 2.5rem 0;
+        font-size: $textFormatMobile;
+      }
+    }
+    .curlang__widget {
+      width: 100%;
+      flex: 0 0 0;
+      @include flex(center, center, row);
+
+      .cur__form,
+      .lang__form {
+        margin: 0 2rem;
       }
     }
   }
 
-  ///////////////
-  //  FOOTER   //
-  ///////////////
-  .footer {
-    padding: 4rem 0 1.9rem 0;
-    .footer__widgets {
-      @include flex(center, center, column);
-      padding: 0 0 3.5rem 0.5rem;
-      height: 100%;
-      border-bottom: 1px solid #eeeeee;
-      margin-bottom: 2.1rem;
+  .footer__copyrights {
+    @include flex(center, flex-start, column);
 
-      .socials__widget {
-        width: 100%;
-        flex: 0 0 0;
-        margin-bottom: 3.4rem;
-        @include flex(center, center, row);
-        .social__icon {
-          margin: 0 3rem;
-        }
-      }
-
-      .policies__widget {
-        width: 100%;
-        @include flex(center, center, row);
-        margin-bottom: 3.6rem;
-
-        .policy {
-          margin: 0 5rem;
-          font-size: $textFormatMobile;
-        }
-      }
-      .curlang__widget {
-        width: 100%;
-        flex: 0 0 0;
-        @include flex(center, center, row);
-
-        .cur__form,
-        .lang__form {
-          margin: 0 2rem;
-        }
-      }
+    .copyright {
+      margin: 0 0 2.3rem 0.4rem;
     }
 
-    .footer__copyrights {
-      @include flex(center, flex-start, column);
-
-      .copyright {
-        margin: 0 0 2.3rem 0.4rem;
-      }
-
-      .credit-cards {
-        margin-left: 0.5rem;
-      }
+    .credit-cards {
+      margin-left: 0.5rem;
     }
   }
 }
 
+//////////////////////////////
+//////      MOBILE      //////
+//////////////////////////////
 @media screen and (max-width: 710px) {
   .item-price {
     cursor: text;
@@ -251,7 +244,7 @@
   }
 
   .box__item,
-  img {
+  .box__item img {
     max-height: 30.4rem;
     max-width: 24.1rem;
   }
@@ -296,6 +289,7 @@
   /////////////////////////
   //  SHOP NOW SECTION   //
   /////////////////////////
+
   .shopnow {
     .category__info {
       top: 1rem;
@@ -321,7 +315,7 @@
     border-bottom: 1px solid #ececec;
 
     .newsletter__header {
-      margin: 5rem 0 3.8rem 0;
+      margin: 4.1rem 0 3.8rem 0;
       font-size: $newsletterHeaderMobile;
     }
 
@@ -359,6 +353,9 @@
     width: 60%;
     @include flex(center, center, column);
 
+    .shopnow__category {
+      margin-bottom: 0.9rem;
+    }
     .cat4 {
       height: 24.5rem;
     }

@@ -1,5 +1,5 @@
 import "./styles/style.scss";
-import "./script.js";
+// import "./script.js";
 import Swiper from "swiper";
 
 (function swiperFcn() {
@@ -7,8 +7,8 @@ import Swiper from "swiper";
     freeMode: true,
     // centeredSlides: true,
 
-    slidesPerView: 1,
-    spaceBetween: 1,
+    slidesPerView: 2,
+    spaceBetween: 200,
     // init: true,
     loop: true,
 
@@ -22,11 +22,6 @@ import Swiper from "swiper";
     },
 
     breakpoints: {
-      350: {
-        slidesPerView: 2,
-        spaceBetween: 250,
-      },
-
       405: {
         slidesPerView: 2,
         spaceBetween: 200,
