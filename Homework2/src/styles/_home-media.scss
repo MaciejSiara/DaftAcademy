@@ -124,66 +124,80 @@
     }
   }
 }
-///////////////
-//  FOOTER   //
-///////////////
-.footer {
-  padding: 4rem 0 1.9rem 0;
-  .footer__widgets {
-    @include flex(center, center, column);
-    padding: 0 0 3.5rem 0.5rem;
-    height: 100%;
-    border-bottom: 1px solid #eeeeee;
-    margin-bottom: 2.1rem;
 
-    .socials__widget {
-      width: 100%;
-      flex: 0 0 0;
-      margin-bottom: 3.4rem;
-      @include flex(center, center, row);
-      .social__icon {
-        margin: 0 3rem;
+@media screen and (max-width: 765px) {
+  /////////////
+  // FOOTER  //
+  /////////////
+  .footer {
+    padding: 4rem 0 1.9rem 0;
+    .footer__widgets {
+      @include flex(center, center, column);
+      padding: 0 0 3.5rem 0.5rem;
+      height: 100%;
+      border-bottom: 1px solid #eeeeee;
+      margin-bottom: 2.1rem;
+
+      .socials__widget {
+        width: 100%;
+        flex: 0 0 0;
+        margin-bottom: 3.4rem;
+        @include flex(center, center, row);
+        .social__icon {
+          margin: 0 3rem;
+        }
+      }
+
+      .policies__widget {
+        width: 100%;
+        @include flex(center, center, row);
+        margin-bottom: 3.6rem;
+
+        .policy {
+          margin: 0 2rem;
+          font-size: $textFormatMobile;
+        }
+      }
+      .curlang__widget {
+        width: 100%;
+        flex: 0 0 0;
+        @include flex(center, center, row);
+
+        .cur__form,
+        .lang__form {
+          margin: 0 2rem;
+        }
       }
     }
 
-    .policies__widget {
-      width: 100%;
-      @include flex(center, center, row);
-      margin-bottom: 3.6rem;
+    .footer__copyrights {
+      @include flex(center, flex-start, column);
 
-      .policy {
-        margin: 0 5rem 2.5rem 0;
-        font-size: $textFormatMobile;
+      .copyright {
+        margin: 0 0 2.3rem 0.4rem;
       }
-    }
-    .curlang__widget {
-      width: 100%;
-      flex: 0 0 0;
-      @include flex(center, center, row);
 
-      .cur__form,
-      .lang__form {
-        margin: 0 2rem;
+      .credit-cards {
+        margin-left: 0.5rem;
       }
     }
   }
 
-  .footer__copyrights {
-    @include flex(center, flex-start, column);
-
-    .copyright {
-      margin: 0 0 2.3rem 0.4rem;
-    }
-
-    .credit-cards {
-      margin-left: 0.5rem;
+  /////////////
+  //  FORM   //
+  /////////////
+  .newsletter {
+    .newsletter__form {
+      .newsletter__explain {
+        margin: 1.4rem 0 3.7rem 0;
+      }
     }
   }
 }
 
-//////////////////////////////
-//////      MOBILE      //////
-//////////////////////////////
+////////////////////////////
+////      MOBILE      //////
+////////////////////////////
 @media screen and (max-width: 710px) {
   .item-price {
     cursor: text;
@@ -326,28 +340,14 @@
     .newsletter__form {
       width: 80%;
       margin-top: 4rem;
-
-      .newsletter__explain {
-        margin: 1.4rem 0 3.7rem 0;
-      }
-    }
-  }
-
-  ///////////////
-  //  FOOTER   //
-  ///////////////
-  .footer {
-    .footer__widgets {
-      .policies__widget {
-        .policy {
-          margin: 0 2rem;
-        }
-      }
     }
   }
 }
 
 @media screen and (max-width: 620px) {
+   /////////////////////////
+  //  SHOP NOW SECTION   //
+  /////////////////////////
   .shopnow {
     min-width: 34.5rem;
     width: 60%;
@@ -377,6 +377,9 @@
 }
 
 @media screen and (max-width: 525px) {
+  //////////////
+  //  HEADER  //
+  //////////////
   .header__section {
     padding: 1.7rem 0 0 0;
     .main__content {
@@ -386,7 +389,7 @@
   }
 
   //////////////
-  //  FORM  //
+  //   FORM   //
   //////////////
   .newsletter {
     .newsletter__form {
