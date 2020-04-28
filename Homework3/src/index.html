@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Some Web description...." />
+    <meta name="robot" content="index,follow" />
+
+    <!------------------ SWIPER SLIDER ---------------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
+    
+    <!------------------------------------------------------------->
+   
+    <title>Zonex</title>
+  </head>
+
+  <body>
+    <!-- ================== -->
+    <!-- ====  HEADER  ==== -->
+    <!-- ================== -->
+    <section class="header__section">
+      <header class="header main__content">
+        <div class="burger">
+        <img class="burger-icon" src="./assets/-e-canvas-menu.svg" srcset="./assets/-e-canvas-menu.svg, ./assets/-e-canvas-menu@2x.svg 2x, ./assets/-e-canvas-menu@3x.svg 3x" alt="burger">
+        </div>
+        <div class="header__logo">
+          <img
+            src="./assets/-e-logo-zonex.svg"
+            srcset="
+              ./assets/-e-logo-zonex.svg,
+              ./assets/-e-logo-zonex@2x.svg 2x,
+              ./assets/-e-logo-zonex@3x.svg 3x
+            "
+            alt="Logo"
+            class="logo__image"
+          />
+        </div>
+        <nav class="header__navigation">
+          <ul class="navigation__list">
+            <li><a href="#" class="nav-link home">Home</a></li>
+            <li><a href="#" class="nav-link shop">Shop</a></li>
+            <li><a href="#" class="nav-link elements">Elements</a></li>
+            <li><a href="#" class="nav-link blog">Blog</a></li>
+            <li><a href="#" class="nav-link page">Page</a></li>
+          </ul>
+          <div class="header__user">
+            <img
+              class="user__icon"
+              src="./assets/-e-kz-user.svg"
+              srcset="
+                ./assets/-e-kz-user.svg,
+                ./assets/-e-kz-user@2x.svg 2x,
+                ./assets/-e-kz-user@3x.svg 3x,
+              "
+              alt="User"
+            />
+            <div class="user__basket">
+              <img
+                class="basket__icon"
+                src="./assets/-e-kz-bag.svg"
+                srcset="
+                  ./assets/-e-kz-bag.svg,
+                  ./assets/-e-kz-bag@2x.svg 2x,
+                  ./assets/-e-kz-bag@3x.svg 3x
+                "
+                alt="Basket"
+              />
+              <div class="basket__value">
+                <span class="items__value">3</span>
+                <img
+                  src="./assets/-e-Ellipse-1.svg"
+                  srcset="
+                    ./assets/-e-Ellipse-1.svg,
+                    ./assets/-e-Ellipse-1@2x.svg 2x,
+                    ./assets/-e-Ellipse-1@3x.svg 3x
+                  "
+                  alt="Basket value"
+                  class="value__background"
+                />
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </section>
+
+    <!-- ================== -->
+    <!-- ====  SLIDER  ==== -->
+    <!-- ================== -->
+
+    <div class="carousel">
+      <div class="container">
+        
+        <div class="carousel__wrapper">
+          <div id="swiper-button-prev" class="swiper-button-prev"></div>
+         <div class="swiper-container">
+           <div id="swiper-wrapper" class="swiper-wrapper"></div>
+         </div>
+        
+          <div id="swiper-button-next" class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- ====  MAIN SHOP  ==== -->
+    <!-- ===================== -->
+    <section class="shop main__content">
+      <div class="to-top">
+        <img class="to-top-arrow" src="./assets/top.svg" alt="top-arrow">
+      </div>
+      <div class="content ">
+      <div class="content__header">
+        <h3 class="content__title">New Arrivals</h3>
+      </div>
+      <div id="content__items" class="content__items"></div>
+    </div>
+    <div class="content__showMore ">
+      <button id="show-more-btn" class="content__showMore__button">All products</button>
+    </div>
+    </section>
+    <!-- ===================== -->
+    <!-- ====  SHOP NOW   ==== -->
+    <!-- ===================== -->
+    <section class="shopnow main__content">
+      <div class="shopnow__category cat1">
+        <img class="cat-img" src="https://via.placeholder.com/547x630" alt="" />
+        <div class="category__info">
+          <span class="info__header">Sleeve denim</br>mini dress</span>
+          <span class="info__goto">Shop now</span>
+        </div>
+      </div>
+      <div class="shopnow__category cat2">
+        <img class="cat-img" src="https://via.placeholder.com/380x310" alt="" />
+        <div class="category__info">
+          <span class="info__header">Back to school!</span>
+          <span class="info__goto">Shop now</span>
+        </div>
+      </div>
+      <div class="shopnow__category cat3">
+        <img class="cat-img" src="https://via.placeholder.com/380x310" alt="" />
+        <div class="category__info">
+          <span class="info__header">Jewelry for night</span>
+          <span class="info__goto">Shop now</span>
+        </div>
+      </div>
+      <div class="shopnow__category cat4">
+        <!-- <img class="cat-img" src="https://via.placeholder.com/769x310" alt="" /> -->
+         <img class="cat-img" src="http://placekitten.com/769/310" alt="" />
+        <div class="category__info">
+          <span class="info__header">Sunglasses for you</span>
+          <span class="info__goto">Shop now</span>
+        </div>
+      </div>
+    </section>
+
+     <!-- ================ -->
+    <!-- ====  FORM   ==== -->
+    <!-- ================= -->
+    <section class="newsletter main__content">
+      <h2 class="newsletter__header">Our newsletter</h2>
+      <h3 class="newsletter__info">join our list and get 15% off your first purchase!</h3>
+      <form action="#" class="newsletter__form">
+        <div class="form__input">
+          <input type="email" class="input__email" placeholder="Email Adress" required>
+          <button class="btn form__submit-btn">Subscribe</button>
+        </div>
+        <span class="newsletter__explain">*Dont't worry we don't spam</span>
+      </form>
+    </section>
+
+    <!-- ===================== -->
+    <!-- ====  FOOTER   ==== -->
+    <!-- ===================== -->
+    <footer class="footer main__content">
+      <div class="footer__widgets">
+        <ul class="socials__widget">
+          <li><a href="https://twitter.com/explore" target="_blank" >
+            <img class="social__icon" src="./assets/-e-kz-twitter.svg"
+          srcset="./assets/-e-kz-twitter.svg,
+          ./assets/-e-kz-twitter@2x.svg 2x,
+          ./assets/-e-kz-twitter@3x.svg 3x" alt="twitter"></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank">
+            <img class="social__icon" src="./assets/-e-kz-facebook.svg" 
+            srcset="./assets/-e-kz-facebook.svg, 
+            ./assets/-e-kz-facebook@2x.svg 2x,
+          ./assets/-e-kz-facebook@3x.svg 3x" alt="facebook" ></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank">
+            <img class="social__icon" src="./assets/-e-kz-instagram.svg" 
+            srcset="./assets/-e-kz-instagram.svg, 
+            ./assets/-e-kz-instagram@2x.svg 2x,
+          ./assets/-e-kz-instagram@3x.svg 3x" alt="instagram"></a>
+            </li>
+          <li><a href="https://pl.pinterest.com/" target="_blank">
+            <img class="social__icon" src="./assets/-e-kz-pinterest.svg" 
+            srcset="./assets/-e-kz-pinterest.svg, 
+            ./assets/-e-kz-pinterest@2x.svg 2x, ./assets/-e-kz-pinterest@3x.svg 3x" alt="pinterest"></a></li>
+        </ul>
+        <div class="policies__widget">
+          <button class="btn policy">Returns Policy</button>
+          <button class="btn policy">Privaty Policy</button>
+          <button class="btn policy">Privaty Policy</button>
+        </div>
+        <div class="curlang__widget">
+          <form action="#" class="cur__form">
+            <label for="currency" class="lbl">Currency</label>
+            <select name="currency" id="currency" class="slct slct-currency">
+              <option value="USD" class="slct-value">usd</option>
+              <option value="PLN" calss="slct-value">pln</option>
+            </select>
+          </form>
+          <form action="#" class="lang__form">
+            <label for="language" class="lbl">Language</label>
+            <select name="language" id="language" class="slct slct-language">
+              <option value="ENGLISH" class="slct-value">english</option>
+              <option value="POLISH" class="slct-value">polish</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <div class="footer__copyrights">
+        <span class="copyright">&copy;%CurrentYear% Zonex All rights reserved</span>
+        <img class="credit-cards" src="./assets/payment.jpg" srcset="./assets/payment.jpg, ./assets/payment@2x.jpg 2x, ./assets/payment@3x.jpg 3x" alt="payments">
+      </div>
+    </footer>
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+
+  </body>
+</html>
