@@ -4,11 +4,9 @@ import { prevSlide } from "../main.js";
 
 const raycaster = new THREE.Raycaster();
 const objLoader = new THREE.OBJLoader();
-let arrowBox = null;
 
 let arrowBoxRotation = 0;
 let arrowBoxesArr = [];
-let arrowBoxRotationsArr = [0, 0];
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
