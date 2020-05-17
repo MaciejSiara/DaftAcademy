@@ -1,0 +1,32 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5rem;
+
+  & img {
+    width: 15rem;
+    height: 15rem;
+    animation: 1s spin infinite linear;
+    @media all and (max-width: $breakpoint-desktops) {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+
+  &-text {
+    margin-top: 2rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

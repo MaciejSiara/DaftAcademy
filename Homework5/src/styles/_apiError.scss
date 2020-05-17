@@ -1,0 +1,13 @@
+.error {
+  @include flex(center, center, column);
+  margin: 4rem;
+  display: none;
+
+  &-information {
+    text-align: center;
+    font-size: 4rem;
+    @media all and (max-width: 800px) {
+      font-size: 3rem;
+    }
+  }
+}

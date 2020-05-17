@@ -69,7 +69,7 @@ const addCube = (object, callbackFn, x, y, angleX, angleY, angleZ) => {
 
   boundingBox.callbackFn = callbackFn;
 
-  arrowBox = boundingBox;
+  // arrowBox = boundingBox;
   arrowBoxesArr.push(boundingBox);
   scene.add(boundingBox);
 };

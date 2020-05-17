@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px;
+  // overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main__content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.item-name {
+  font-family: Jost-Medium, sans-serif;
+  font-size: $textFormat;
+  color: $descText;
+  padding-bottom: 1rem;
+}
+
+.item-price {
+  font-family: Jost-Bold, sans-serif;
+  font-size: $textFormat;
+  color: $mainDark;
+  padding-right: 0.7rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.item-old-price {
+  @include textFormater;
+  color: $backgroundText;
+  text-decoration-line: line-through;
+}
+
+.btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+
+
+
+
+.dark__product {
+  background-color: rgba($color: #000000, $alpha: 1);
+  img {
+    opacity: 0.5;
+  }
+
+  .item-name,
+  .item-price {
+    color: white;
+  }
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block{
+  display: block;
+}
+
+.display-flex{
+  display: flex;
+}

@@ -1,0 +1,106 @@
+.carousel {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: $carBack;
+  position: relative;
+  width: 100%;
+  margin-top: -92px;
+  padding: 50px 0 50px 0;
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    overflow: hidden;
+  }
+  @media all and (max-width: $breakpoint-phones) {
+    padding: 50px 0 40px 0;
+  }
+}
+.swiper-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  // @media all and (max-width: 1600px) {
+  //   width: 80%;
+  // }
+  // @media all and (max-width: $breakpoint-tablets) {
+  //   display: block;
+  //   width: 115%;
+  // }
+  // @media all and (max-width: $breakpoint-phones) {
+  //   display: block;
+  //   width: 150%;
+  //   margin-left: 10px;
+  // }
+}
+.swiper-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  // overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.swiper-slide {
+  position: absolute;
+  padding: 0 2rem;
+  position: relative;
+  &:first-child {
+    padding-left: 0;
+  }
+  &__description {
+    width: 100%;
+    position: absolute;
+    bottom: 19px;
+    padding: 0 20px;
+
+    &__name {
+      font-size: 1.3rem;
+      color: #454545;
+      margin-bottom: 10px;
+    }
+    &__price {
+      color: $mainDark;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+  }
+  img {
+    width: 268px;
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+  // border: 1px solid #ffffff !important;
+  // position: absolute;
+  // box-shadow: none;
+  // height: 48px;
+  // width: 48px;
+
+  // &:after {
+  //   content: "";
+  // }
+
+  // @media all and (max-width: $breakpoint-tablets) {
+  //   display: none;
+  // }
+}
+// .swiper-button-prev {
+//   left: 5%;
+//   @media all and (max-width: 1600px) {
+//     left: 10px;
+//   }
+// }
+// .swiper-button-next {
+//   right: 5%;
+//   @media all and (max-width: 1600px) {
+//     right: 10px;
+//   }
+// }
