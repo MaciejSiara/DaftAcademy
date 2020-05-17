@@ -43,7 +43,7 @@ export default function (products) {
     direction: "horizontal",
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 10,
     autoplay: {
       delay: 2000,
     },
