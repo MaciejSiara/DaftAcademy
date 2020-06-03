@@ -10,8 +10,7 @@ export default function getProducts() {
         {
           headers: {
             "x-rapidapi-host": "asos2.p.rapidapi.com",
-            "x-rapidapi-key":
-              "181b612297mshd0e7e19beb1bc7fp1b8e4fjsnfe7f21eb28e8",
+            "x-rapidapi-key": "f51c73583fmshc643fc88a9da564p119f93jsn22db36d2e377",
           },
         }
       )

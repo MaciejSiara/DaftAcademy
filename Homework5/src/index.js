@@ -29,7 +29,10 @@ const controller = (function () {
         createItemsContent(res);
         shopNow(res.slice(0, 4));
       })
-      .catch((error) => displayError())
+      .catch((error) => {
+        displayError();
+        console.log(error);
+      })
       .finally(() => hideLoader());
 
     // GO TO TOP BUTTON

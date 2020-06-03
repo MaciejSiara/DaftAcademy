@@ -26,24 +26,11 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  // @media all and (max-width: 1600px) {
-  //   width: 80%;
-  // }
-  // @media all and (max-width: $breakpoint-tablets) {
-  //   display: block;
-  //   width: 115%;
-  // }
-  // @media all and (max-width: $breakpoint-phones) {
-  //   display: block;
-  //   width: 150%;
-  //   margin-left: 10px;
-  // }
 }
 .swiper-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  // overflow: hidden;
   width: 100%;
   position: relative;
 }
@@ -51,22 +38,29 @@
   position: absolute;
   padding: 0 2rem;
   position: relative;
+
   &:first-child {
     padding-left: 0;
   }
   &__description {
-    width: 100%;
+    max-width: 100%;
     position: absolute;
-    bottom: 19px;
-    padding: 0 20px;
+    bottom: 5px;
+    left: 25px;
+    padding: 10px;
+
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    border-radius: 10px;
 
     &__name {
+      z-index: 4;
       font-size: 1.3rem;
-      color: #454545;
+      color: white;
       margin-bottom: 10px;
     }
     &__price {
-      color: $mainDark;
+      z-index: 4;
+      color: white;
       font-size: 1.3rem;
       font-weight: bold;
     }
@@ -78,29 +72,4 @@
 .swiper-button-prev,
 .swiper-button-next {
   cursor: pointer;
-  // border: 1px solid #ffffff !important;
-  // position: absolute;
-  // box-shadow: none;
-  // height: 48px;
-  // width: 48px;
-
-  // &:after {
-  //   content: "";
-  // }
-
-  // @media all and (max-width: $breakpoint-tablets) {
-  //   display: none;
-  // }
 }
-// .swiper-button-prev {
-//   left: 5%;
-//   @media all and (max-width: 1600px) {
-//     left: 10px;
-//   }
-// }
-// .swiper-button-next {
-//   right: 5%;
-//   @media all and (max-width: 1600px) {
-//     right: 10px;
-//   }
-// }
