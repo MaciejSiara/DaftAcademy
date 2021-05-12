@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "swiper": "^5.3.7"
+    "swiper": "^6.5.1"
   },
   "browserList": [
     "last 2 version",
