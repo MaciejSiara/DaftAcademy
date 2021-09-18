@@ -6,10 +6,9 @@ Main task was to create shop website based on given graphic project.
 
 ## Features:
 - Slider
-- Get data from external API
+- Data from external API
 - Scroll to top button
-- Load more products button
-- Auto-updating year in footer
+- Load more products
 
 ## Used technologies:
 - Webpack
